@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Registrasi</title>
+    <link rel="stylesheet" href="Halaman_Ketiga.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="form-box">
+            <div class="button-box">
+                <button class="toggle-btn" onclick="showLogin()">Login</button>
+                <button class="toggle-btn" onclick="showRegister()">Registrasi</button>
+            </div>
+
+            <!-- Form Login -->
+            <form id="loginForm">
+                <h2>Form Login</h2>
+                <input type="email" placeholder="Masukkan Email" required>
+                <input type="password" placeholder="Masukkan Password" required>
+                <button type="submit">Login</button>
+                <p>Belum punya akun? <a href="#" onclick="showRegister()">Daftar sekarang</a></p>
+            </form>
+
+            <!-- Form Registrasi -->
+            <form id="registerForm">
+                <h2>Form Registrasi</h2>
+                <input type="text" placeholder="Nama lengkap" required>
+                <input type="email" placeholder="Masukkan Email" required>
+                <input type="password" placeholder="Masukkan Password" required>
+                <input type="password" placeholder="Ulangi password" required>
+                <button type="submit">Daftar</button>
+                <p>Sudah punya akun? <a href="#" onclick="showLogin()">Login sekarang</a></p>
+            </form>
+        </div>
+    </div>
+
+    <script src="Halaman_Ketiga.Js"></script>
+</body>
+</html>
